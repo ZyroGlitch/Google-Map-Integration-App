@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_map_integration/googleCustom_InfoWindow.dart';
 import 'package:google_map_integration/googleMap.dart';
 import 'package:google_map_integration/googleMap_polyLines.dart';
 
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: GooglemapPolylines(),
+      home: GooglecustomInfowindow(),
     );
   }
 }
