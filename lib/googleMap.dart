@@ -100,7 +100,7 @@ class _GooglemapState extends State<Googlemap> {
           googleMapController.animateCamera(
             CameraUpdate.newCameraPosition(
               CameraPosition(
-                zoom: 14,
+                zoom: 16,
                 target: LatLng(position.latitude, position.longitude),
               ),
             ),
@@ -110,6 +110,10 @@ class _GooglemapState extends State<Googlemap> {
             icon: BitmapDescriptor.defaultMarker,
             markerId: MarkerId('This is my location.'),
             position: LatLng(position.latitude, position.longitude),
+            infoWindow: InfoWindow(
+              title: 'My Current Location',
+              snippet: 'This is University of Mindanao.',
+            ),
           ));
           setState(() {});
         },
